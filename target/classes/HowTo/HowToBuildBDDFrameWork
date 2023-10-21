@@ -1,0 +1,20 @@
+Step -1 
+	Build Maven FrameWork Appropriately 
+Step-2
+	Configure POM.Xml File
+	Properties file - JAVA/Maven Version
+	Dependencies - Selenium,WebDriverManager, Cucumber,Junit
+	plug-ins - SureFire Plug-ins
+	
+Step -3 add cucumber plug-ins
+
+Step -4 Build feature folder and feature file
+Step -5 Convert into cucumber framework
+Step-6 Develop cucumber runner file
+Step-7 Configure your Runner file
+Step-8 Run from Runner file
+Step-9 Copy the trace from JUnit
+Step-10 Build Step defination package
+Step-11 Build test Defination class
+Step-12 Paste the trace and fix it
+Step-13 Make sure glue path is right
