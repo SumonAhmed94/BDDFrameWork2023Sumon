@@ -1,0 +1,12 @@
+Step -1 
+Scenario Outline:
+
+Step-2 write appropriate user input column name 
+in the <> such as <browser>
+Step-3 Build examples
+Examples:|browser|url|userName|password|
+explain scenario outline design
+
+what is scenario outline
+What is examples
+What is pipe in cucumber

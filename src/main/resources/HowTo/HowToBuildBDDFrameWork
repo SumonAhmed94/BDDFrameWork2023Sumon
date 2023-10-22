@@ -14,7 +14,7 @@ Step-6 Develop cucumber runner file
 Step-7 Configure your Runner file
 Step-8 Run from Runner file
 Step-9 Copy the trace from JUnit
-Step-10 Build Step defination package
+Step-10 Build Step Defination package
 Step-11 Build test Defination class
 Step-12 Paste the trace and fix it
 Step-13 Make sure glue path is right

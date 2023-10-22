@@ -1,7 +1,8 @@
-#Author: your.email@your.domain.com
-Feature: Login
 
-  @tag1
+@common
+Feature: Valid Login Test
+
+  @sprint1 @smoke @regression 
   Scenario: As a tester I open facebook app to
     enter my valid user name and password and click login button 
     so that i can be logged in

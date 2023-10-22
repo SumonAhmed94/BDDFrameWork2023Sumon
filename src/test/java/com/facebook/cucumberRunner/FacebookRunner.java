@@ -9,12 +9,13 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 
 
-@RunWith(Cucumber.class)
+@RunWith(Cucumber.class)// Find the Cucumber Class in this project
 @CucumberOptions(
-plugin= {"pretty", "html:target/facebookReport.html"},
+plugin= {"pretty", "html:target/facebookReport.html"},// Path for the report Location
 
-features="src/test/resources/features",
-glue="com.facebook.stepDefinations",
+features="src/test/resources/features",// path for the Login Feature
+glue="com.facebook.stepDefinations", // Path for the StepDefinations
+tags="@common",
 snippets=SnippetType.CAMELCASE
 		
 		)

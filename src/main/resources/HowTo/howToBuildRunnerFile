@@ -1,0 +1,31 @@
+Step-1 Build a Runner Package
+
+Step -2 Develop a FaceBookRunner Class
+
+@RunWith==import org.junit.runner.RunWith;
+It is JUnit Runner/Rules
+(
+Cucumber.Class)==Run anything with .feature Extension
+
+@CucumberOptions==Filtering and designing Run Configuration
+
+Plug-Ins=="html:target/facebookReport.html" for single report
+Plug-Ins=={"html:target/facebookReport.html","xml:target/facebookReport.xml" for multiple report
+
+"Pretty"== Good looking human readable report
+
+Features== file path where all the feature files are.
+most of the time it will be folder path
+but it is possible to go any level
+"src/test/resources/login.feature"
+
+glue==path of the step defination
+most of the time it will be folder path
+"com.facebook.stepDefinations"
+but it is possible to go any level
+"src/test/resources/login.feature"
+"com.facebook.stepDefinations.LoginStep"
+
+tags== grouping such as @Smoke
+We can run multiple tag at a time=={"@Smoke", "@Regression"}
+tagging condition==and, or, include, exclude

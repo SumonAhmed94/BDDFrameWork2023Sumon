@@ -13,7 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LoginStep {
 	WebDriver driver;
-	@Given("I open facebook app")
+	@Given("I open facebook app") // Precondition
 	public void iOpenFacebookApp() {
 		WebDriverManager.chromedriver().setup();
 		driver= new ChromeDriver();
@@ -21,16 +21,16 @@ public class LoginStep {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.facebook.com/");
 	}
-	@When("enter my valid user name and password")
+	@When("enter my valid user name and password")//Action
 	public void enterMyValidUserNameAndPassword() {
 		driver.findElement(By.id("email")).sendKeys("Sumon");
 		driver.findElement(By.id("pass")).sendKeys("Nurul");
 	}
-	@When("click login button")
+	@When("click login button") // Action
 	public void clickLoginButton() {
 	
 	}
-	@Then("i can be logged in")
+	@Then("i can be logged in")// Result
 	public void iCanBeLoggedIn() {
 	}
 
