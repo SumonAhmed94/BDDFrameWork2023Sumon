@@ -10,7 +10,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginWithUrl extends BaseStep {
-	LoginPage lp; // has a relationship with loginpage
+	LoginPage lp; 
 	@Given("user open {string} and {string}")
 	public void userOpenAnd(String browser, String url) {
 		openApp(browser,url);
@@ -20,7 +20,7 @@ public class LoginWithUrl extends BaseStep {
 	public void userEnterUsername(String username) {
 	lp=new LoginPage(driver);
 	lp.userNameMethod(username);
-		//driver.findElement(By.id("email")).sendKeys(username);
+	
 	}
 	@When("user enter password {string}")
 	public void userEnterPassword(String password) {
