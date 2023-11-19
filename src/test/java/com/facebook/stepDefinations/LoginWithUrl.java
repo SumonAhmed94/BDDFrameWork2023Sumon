@@ -10,10 +10,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginWithUrl extends BaseStep {
-	LoginPage lp; 
+	LoginPage lp;
+	//String browser="chrome";
 	@Given("user open {string} and {string}")
 	public void userOpenAnd(String browser, String url) {
-		openApp(browser,url);
+		openApp(browser, url);
 	
 	}
 	@When("user enter username {string}")

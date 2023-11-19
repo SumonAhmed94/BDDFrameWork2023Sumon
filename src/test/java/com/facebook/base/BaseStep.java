@@ -12,13 +12,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseStep { // where we write all the test class
 	// Base test is the parent class
 	public WebDriver driver; // public means everybody can have access
-	//PropertiesReader reader;
-	//String browser = "Chrome";
+	
 
 	
 	public WebDriver openApp(String browser, String url) {
-		//reader= new PropertiesReader();
-		//String browser=reader.readBrowser();
 		if (browser.equalsIgnoreCase("Chrome")) {// if, else if, else - is called regular conditional statement
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
@@ -40,7 +37,6 @@ public class BaseStep { // where we write all the test class
 		//this space is out of nested but inside the method
 		driver.manage().window().maximize(); // we put here because we don't need to put every block because of inside the method.
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		//String url=reader.getQaUrl();
 		driver.get(url);
 		return driver;
 
